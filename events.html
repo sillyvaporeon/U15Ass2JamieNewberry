@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behavior on mobile devices -->
+	<title>SVCM</title> <!-- Sets the title of the webpage -->
+	<style>
+			/* Basic styling for layout */
+			body {
+				font-family: Arial, sans-serif; /* Sets the font style for the entire page */
+				margin: 0; /* Removes default margin */
+				padding: 0; /* Removes default padding */
+				text-align: center; /* Centers text content */
+			}
+			/* Adds padding, margin, and border to key sections */
+			header, nav, main, section, footer {
+				padding: 20px; /* Adds space inside the elements */
+				border: 1px solid #ddd; /* Adds a light gray border */
+				margin: 10px; /* Adds space around the elements */
+				display: flex;
+				flex-direction: column;
+			}
+			/* Styles the logo image */
+			.logo {
+				max-width: 125px; /* Limits the maximum width of the logo */
+				margin: auto;
+				padding-bottom: 15px;
+			}
+			/* Styles the sections container to align content horizontally */
+			
+			.sections {
+				display: flex;
+				justify-content: space-around;
+			}
+
+			
+			/* Styles individual sections */
+			.section {
+				width: 45%; /* Sets the width of each section to take almost half the space */
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #ccccb9;
+				transition-duration: 0.5s;
+			}
+			.section:hover {
+				scale:102%;
+			}
+			.sectsmall {
+			  width: 40%;
+			  padding-top: 25px;
+			  padding-bottom: 25px;
+			  border: 3px groove #ccccb9;
+			  transition-duration: 0.5s;
+			}
+			.sectsmall:hover {
+				scale:103%;
+			}
+			.button {
+			  width: 20%;
+			  padding-top: 10px;
+			  padding-bottom: 10px;
+			  border: 3px groove #ccccb9;
+			  border-radius: 10px;
+			  transition-duration: 0.5s;
+			}
+			.button:hover {
+				scale:103%;
+			}
+			.button2{
+			  width: 65%;
+			  padding-top: 12px;
+			  padding-bottom: 12px;
+			  border: 3px groove #ccccb9;
+			  border-radius: 10px;
+			  transition-duration: 0.5s;
+			}
+			.button2:hover {
+				scale:103%;
+			}
+			.titlebar {
+				border: 5px groove #ccccb9;
+				justify-content: space-around;
+				background-color: #fffcf9;
+				width: fit-content;
+				margin: auto;
+				padding: 3px;
+			}
+			.fit {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.headpush {
+				margin-top: 45px;
+			}
+			.image {
+				border: 3px outset #c0c0c0;
+				border-radius: 15px;
+				transition-duration: 0.5s;
+			}
+			
+			.image:hover {
+				scale: 105%
+			}
+			.imagegall {
+				border: 3px outset #c0c0c0;
+				border-radius: 15px;
+				width: 20%;
+				box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+				transition-duration: 0.5s;
+			}
+			
+			.imagegall:hover {
+				scale: 110%;
+				box-shadow: 0 16px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.navb {
+			  width: 15%;
+			  padding-top: 8px;
+			  padding-bottom: 8px;
+			  border: 4px groove #ccccb9;
+			  border-radius: 20px;
+			  transition-duration: 0.5s;
+			}
+			.navb:hover {
+				scale:103%;
+				background-color: #bfaa95;
+				color: white;
+			}
+	</style>
+</head>
+<body style="background-image: linear-gradient(to bottom, white, #0b4ea2, #ee1c25); background-attachment: fixed" class="fit">
+	<!-- Header Section with Logo -->
+	<header style="background-image: linear-gradient(to bottom, peachpuff, papayawhip); border: 7px outset LightSteelBlue; border-radius: 15px; " class="headpush">
+		<img src="logo.png" alt="Logo" class="logo"> <!-- Displays a logo image -->
+		<h1 class="titlebar">Slovenské Vzdelávacie Centrum Manchester</h1> <!-- Main title of the website -->
+	</header>
+ 
+		<!-- Navigation Bar -->
+	<nav style="background-color: papayawhip; border: 7px outset LightSteelBlue; border-radius: 15px; font-size: 20px;">
+		<div class="sections">
+			<a class="navb" href="index.html"><h2>Home Page</h2></a>
+			<a class="navb" href="about.html"><h2>About Us</h2></a>
+			<a class="navb" href="dates_fees.html"><h2>Dates & Fees</h2></a>
+			<a class="navb" href="registration.html"><h2>Register With Us!</h2></a>
+			<a class="navb" href="school.html"><h2>Slovak School</h2></a>
+			<a class="navb" href="events.html"><h2>Events & Projects</h2></a>
+		</div>
+	</nav>
+ 
+    <!-- Main Content Area with Two Sections -->
+	<main style="background-color: #0e62cc; border: 5px outset #0a4a99; border-radius: 15px;">
+		<h2 style="color:white; text-shadow: 2px 2px 3px darkslategrey;">Events & Projects</h2> <!-- Main heading for content section -->
+		<p style="color: white; text-shadow: 2px 2px 3px darkslategrey; ">At Slovenské Vzdelávacie Centrum – South Manchester, we believe that Slovak culture should be experienced, not just learned. That’s why we organise a variety of events for everyone—families, children, adults, and individuals who simply want to connect with Slovak heritage, make new friends, and enjoy great company.</p> <!-- Short description of the page -->
+		<div class="sections">
+			<section class="section" style="background-color:papayawhip; border-radius:25px;">
+				<p style="font-size:18px;">Whether you’re a parent wanting to engage your child in Slovak traditions, a single professional looking to expand your social circle, or someone who just loves Slovak culture, our variety of events and workshops provides a welcoming space where people can enjoy themselves, have fun, eat traditional Slovak food, and build lasting connections.</p>
+				<p style="font-size:17px;">Some come for the cultural experience, some come to practise their Slovak, and others just come to enjoy good company over a coffee or a glass of wine. Whatever your reason, you are always welcome.</p>
+		</div>
+		
+		
+		<div class="sections"> 
+			<section class="sectsmall" style="background-color:papayawhip;">
+				<h3>Upcoming Events</h3> <!-- Heading for the first section -->
+				<p>Join us for our upcoming events—come with friends or come alone; you’ll always find a warm and friendly group to welcome you.</p>
+					<div class="sections">
+						<section class="sectsmall" style="background-color:papayawhip;">
+							<h3>Easter Workshop (6th April)</h3>
+							<p>Step into the world of Slovak Easter traditions at our Easter Workshop, where culture, creativity, and community come together for a fun and welcoming afternoon.</p>
+							<p>This hands-on event will offer something for everyone—families, individuals, and anyone who enjoys arts, crafts, and festive traditions. Join us in decorating eggs using traditional Slovak techniques, creating beautiful Easter crafts, and learning about the unique customs that make Slovak Easter so special.</p>
+							<p>But this event is more than just a workshop—it's also a social gathering where you can meet new people, enjoy great company, and experience a warm community atmosphere. Whether you're coming with friends, family, or on your own, you’ll find a friendly, relaxed environment where connections happen naturally over delicious Slovak food and drinks.</p>
+							<p>To make the afternoon even more special, we will have music playing throughout the event and, if all goes to plan, we hope to welcome a special guest.</p>
+							<p>📌 Come along, get creative, and celebrate Slovak Easter traditions in a fun and social setting! More details on our socials.</p>
+						</section>
+						
+						<section class="sectsmall" style="background-color:papayawhip;">
+							<h3>Kids Disco 2025 (12th July)</h3>
+							<p>A high-energy event to celebrate the end of the school year with music, dancing, and lots of fun! This special edition of our Kids Disco will also include a "Vysvedčenie" ceremony, where children will receive their end-of-yearcertificates and prizes to recognize their hard work and achievements.</p>
+							<p>With a DJ bringing the party atmosphere, children can enjoy dancing, games, and entertainment while parents and other guests have the chance to relax, socialize, and celebrate together.</p>
+							<p>Whether you're bringing your child or just stopping by to enjoy the event, it's a great way to connect with the community, mark the end of another fantastic year, and kick off the summer in style.</p>
+							<p>📌 Save the dates – more details coming soon! Follow us on our socials:</p>
+							<a href="https://www.facebook.com/p/Slovenské-Vzdelávacie-Centrum-South-Manchester-61557468560704/">
+								<button class="button2"><img src="fbicon.png" style="max-width:75px"></button>
+							</a>
+							<a href="https://www.instagram.com/slovakschoolmanchester.charity/">
+								<button class="button2"><img src="igicon.png" style="max-width:75px"></button>
+							</a>
+						</section>
+					</div>
+			</section>
+			
+
+				<img class="image" alt="Event at a cafe" src="events image1.png" style="max-width: 650px; max-height: 490px; align-self: center">
+
+			
+			<section class="sectsmall" style="background-color:papayawhip;">
+				<h3>Past Events</h3>
+				<p>Our past events have brought together people of all ages and backgrounds to celebrate, learn, and enjoy Slovak traditions in real life.</p>
+					<div class="sections">
+						<section class="section" style="background-color:papayawhip;">
+							<h3>Fašiangový Karneval</h3>
+							<p>A traditional Slovak carnival full of masks, costumes, music, and dancing. A fun opportunity for both kids and adults to enjoy the vibrant and playful atmosphere of this centuries-old tradition.</p>
+						</section>
+
+						<section class="section" style="background-color:papayawhip;">
+							<h3>Christmas Workshop</h3>
+							<p>A festive gathering where participants created handmade decorations, sang Slovak carols, and enjoyed mulled wine and traditional Christmas treats.</p>
+						</section>
+					</div>		
+					
+					<div class="sections">					
+						<section class="section" style="background-color:papayawhip;">
+							<h3>Open Day</h3>
+							<p>A welcoming event for anyone curious about our school, projects, and cultural activities. Many attendees came to network, share experiences, and find new opportunities within the Slovak community.</p>
+						</section>	
+
+						<section class="section" style="background-color:papayawhip;">
+							<h3>Kids Disco 2024</h3>
+							<p>A high-energy event that brought children, parents, and other community members together for an evening of music, dancing, and socializing.</p>
+						</section>
+					</div>
+					
+					<div class="sections">
+						<section class="section" style="background-color:papayawhip;">
+							<p style="font-size:20px;">Whether you're looking for a family-friendly event, a relaxed social gathering, or a cultural experience, there’s always something happening at SVC-SM.</p>
+							<p style="font-size:20px;">Visit our event gallery to see highlights from our past events (Insert link if available).</p>
+						</section>
+						<section class="section" style="border: none; align-self: center;">
+							<img class="image" alt="A screenshot of a poster for events with the charity" src="events&prjects image1.png">
+						</section>
+					</div>
+			</section>	
+		</div>
+		
+		<div class="sections">
+			<img class="imagegall" alt="A young girl" src="events image2.png">
+			<img class="imagegall" alt="Two men sitting at a party with slovak flag bunting in the background" src="events image3.png">
+			<img class="imagegall" alt="Three people standing in a room with Slovak text in the caption" src="events image4.png">
+			<img class="imagegall" alt="Mirrored image of a young person in a suit holding paper with a caption in Slovak" src="events image5.png">
+		</div>
+		
+		<div class="sections">
+			<section class="section" style="background-color:papayawhip;">
+				<h3>Get Involved!</h3>
+				<p>We welcome anyone who wants to be part of our events and projects—whether you're looking for cultural experiences, social opportunities, or meaningful connections. Here’s how you can join us:</p>
+					<div class="sections">
+						<section class="section" style="background-color:papayawhip;">
+							<p style="font-size: 18px"><b>•	Attend Our Events </b> – Whether you want to celebrate Slovak traditions, meet new people, or just have fun, our events are open to everyone.</p>
+							<p style="font-size: 18px"><b>•	Volunteer With Us </b> – Help organize events, assist with workshops, or contribute your skills to support our community.</p>
+							<p style="font-size: 18px"><b>•	Support an Event or Project </b> – If you or your business would like to sponsor an event, we would love to collaborate.</p>
+							<p style="font-size: 18px"><b>•	Suggest New Ideas </b> – We are always open to new event and project suggestions from the community.</p>
+						</section>
+					</div>
+				<p>It doesn’t matter if you’re a family, a couple, or an individual looking for a sense of community—our doors are open.</p>
+				<p>Interested in volunteering, sponsoring, or suggesting an event? Contact us to get involved! (add link navigating to the form)</p>
+			</section>
+		</div>
+	</main>
+	 
+		<!-- Footer Section -->
+	<footer style="background-color: #ee3336; border: 5px outset #b32629; border-radius: 15px; ">
+		<p>&copy; 2025 Slovenské Vzdelávacie Centrum Manchester. All rights reserved.</p> <!-- Footer copyright information -->
+	</footer>
+</body>
+</html>

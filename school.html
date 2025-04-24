@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behavior on mobile devices -->
+	<title>SVCM</title> <!-- Sets the title of the webpage -->
+	<style>
+			/* Basic styling for layout */
+			body {
+				font-family: Arial, sans-serif; /* Sets the font style for the entire page */
+				margin: 0; /* Removes default margin */
+				padding: 0; /* Removes default padding */
+				text-align: center; /* Centers text content */
+			}
+			/* Adds padding, margin, and border to key sections */
+			header, nav, main, section, footer {
+				padding: 20px; /* Adds space inside the elements */
+				border: 1px solid #ddd; /* Adds a light gray border */
+				margin: 10px; /* Adds space around the elements */
+				display: flex;
+				flex-direction: column;
+			}
+			/* Styles the logo image */
+			.logo {
+				max-width: 125px; /* Limits the maximum width of the logo */
+				margin: auto;
+				padding-bottom: 15px;
+			}
+			/* Styles the sections container to align content horizontally */
+			.sections {
+				display: flex; /* Enables flexbox layout */
+				justify-content: space-around; /* Spaces the sections evenly */
+			}
+			.sections2 {
+				display: flex; /* Enables flexbox layout */
+				justify-content: center;
+			}
+			/* Styles individual sections */
+			.section {
+				width: 45%; /* Sets the width of each section to take almost half the space */
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #ccccb9;
+				transition-duration: 0.5s;
+			}
+			.section:hover {
+				scale:102%;
+			}
+			.sectionbig {
+				width: 75%;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #ccccb9;
+				transition-duration: 0.5s;
+			}
+			.sectionbig:hover {
+				scale:110%;
+			}
+			.sectsmall {
+			  width: 40%;
+			  padding-top: 25px;
+			  padding-bottom: 25px;
+			  border: 3px groove #ccccb9;
+			  transition-duration: 0.5s;
+			}
+			.sectsmall:hover {
+				scale:103%;
+			}
+			.button {
+			  width: 20%;
+			  padding-top: 10px;
+			  padding-bottom: 10px;
+			  border: 3px groove #ccccb9;
+			  border-radius: 10px;
+			  transition-duration: 0.5s;
+			}
+			.button:hover {
+				scale:103%;
+			}
+			.navb {
+			  width: 15%;
+			  padding-top: 8px;
+			  padding-bottom: 8px;
+			  border: 4px groove #ccccb9;
+			  border-radius: 20px;
+			  transition-duration: 0.5s;
+			}
+			.navb:hover {
+				scale:103%;
+				background-color: #bfaa95;
+				color: white;
+			}
+			.titlebar {
+				border: 5px groove #ccccb9;
+				justify-content: space-around;
+				background-color: #fffcf9;
+				width: fit-content;
+				margin: auto;
+				padding: 3px;
+			}
+			.fit {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.headpush {
+				margin-top: 45px;
+			}
+			.image {
+				border: 3px outset #c0c0c0;
+				border-radius: 15px;
+				transition-duration: 0.5s;
+			}
+			
+			.image:hover {
+				scale: 105%
+			}
+			.imagegall {
+				border: 3px outset #c0c0c0;
+				border-radius: 15px;
+				max-width: 35%;
+				box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+				transition-duration: 0.5s;
+			}
+			
+			.imagegall:hover {
+				scale: 110%;
+				box-shadow: 0 16px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.icard {
+				border-radius: 15px;
+				transition-duration: 0.5s;
+			}
+			
+			.card {
+				opacity: 0.5;
+			}
+			
+			.image:hover {
+				scale: 105%
+			}
+			div.card {
+				background-color: #062b59;
+				border: 3px outset #c0c0c0;
+				border-radius: 15px;
+				transition-duration: 0.5s;
+				width: 30%;
+			}
+			div.contain {
+				padding: 12px;
+			}
+			.card:hover {
+				scale: 115%;
+				opacity: 1;
+			}
+			
+			.cardA:hover {
+				z-index: 134134134;
+			}
+			.cardB:hover {
+				z-index: 134134134;
+			}
+	</style>
+</head>
+<body style="background-image: linear-gradient(to bottom, white, #0b4ea2, #ee1c25); background-attachment: fixed" class="fit">
+	<!-- Header Section with Logo -->
+	<header style="background-image: linear-gradient(to bottom, peachpuff, papayawhip); border: 7px outset LightSteelBlue; border-radius: 15px; " class="headpush">
+		<img src="logo.png" alt="Logo" class="logo"> <!-- Displays a logo image -->
+		<h1 class="titlebar">Slovenské Vzdelávacie Centrum Manchester</h1> <!-- Main title of the website -->
+	</header>
+ 
+		<!-- Navigation Bar -->
+	<nav style="background-color: papayawhip; border: 7px outset LightSteelBlue; border-radius: 15px; font-size: 20px;">
+		<div class="sections">
+			<a class="navb" href="index.html"><h2>Home Page</h2></a>
+			<a class="navb" href="about.html"><h2>About Us</h2></a>
+			<a class="navb" href="dates_fees.html"><h2>Dates & Fees</h2></a>
+			<a class="navb" href="registration.html"><h2>Register With Us!</h2></a>
+			<a class="navb" href="school.html"><h2>Slovak School</h2></a>
+			<a class="navb" href="events.html"><h2>Events & Projects</h2></a>
+		</div>
+	</nav>
+ 
+    <!-- Main Content Area with Two Sections -->
+	<main style="background-color: #0e62cc; border: 5px outset #0a4a99; border-radius: 15px;">
+		<h1 style="color:white; text-shadow: 2px 2px 3px darkslategrey;">Slovak School</h1> <!-- Main heading for content section -->
+
+		
+		<div class="sections2">
+			<div class="card cardA" style="align-self: center;">
+				<img class="icard" alt="A photo of a classroom" src="Slovak School image1.png" style="width: 100%">
+				<div class="contain">
+					<h2 style="color: white; text-shadow: 2px 2px 3px darkslategrey; font-size: 32px;">Our Approach</h2> <!-- Short description of the page -->
+					<p style="color: white; text-shadow: 2px 2px 3px darkslategrey; font-size: 24px;">At Slovenské Vzdelávacie Centrum – South Manchester, we are proud to be qualified educators with extensive experience across various educational settings. Our goal is to provide a student-centred, engaging, and culturally enriching learning environment, where language learning goes hand in hand with cultural education.</p>
+				</div>
+			</div>
+
+			<div class="card cardB">
+				<img class="icard" alt="A photo of a lesson with two children looking at the board" src="Slovak School image2.png" style="width: 100%">
+				<div class="contain">
+					<h3 style="font-size: 24px; color: white; text-shadow: 2px 2px 3px darkslategrey;">Integrated Language & Cultural Learning</h3>
+					<p style="font-size: 20px; color: white; text-shadow: 2px 2px 3px darkslategrey;">We believe that language and culture are inseparable, which is why our curriculum aligns with our cultural events and workshops. This approach ensures that students not only learn Slovak in the classroom but also experience it in real-life situations. While these events are part of our curriculum, they are also open to members who wish to attend workshops only, providing flexibility to suit individual interests.</p>
+				</div>
+			</div>
+		</div>
+		
+		<p></p>
+		
+		<div class="sections">
+			<section class="sectionbig" style="background-color:papayawhip;">
+				<h3 style="font-size: 24px">Our Teaching Methods</h3>
+				<p style="font-size: 20px">Our teaching is always student-centred, focusing on active participation, communication, and real-world application. We incorporate several well-established language teaching methodologies, including:</p>
+				<div class="sections">
+					<img class="imagegall" alt="Photo of a young boy" src="Slovak School image3.png">
+					<section class="sectsmall" style="background-color:papayawhip;">
+						<p style="font-size: 18px"><b>•	Communicative Language Teaching (CLT)</b> – Prioritising fluency over accuracy, especially in the early stages of learning, to build confidence in speaking.</p>
+						<p style="font-size: 18px"><b>•	Task-Based Learning (TBL)</b> – Using real-life tasks to develop vocabulary and functional language skills.</p>
+						<p style="font-size: 18px"><b>•	Content and Language Integrated Learning (CLIL)</b> – Combining language learning with cultural education, allowing students to learn Slovak through meaningful cultural topics.</p>
+						<p style="font-size: 18px"><b>•	Cooperative Language Learning (CLL)</b> – Encouraging students to work in pairs or small groups, maximising interaction, communication, and collaborative problem-solving.</p>
+					</section>
+					<img class="imagegall" alt="Photo of a board during a lesson" src="Slovak School image4.png">
+				</div>
+					<p style="font-size: 20px">In our classrooms, students learn by engaging in practical activities, group discussions, and interactive projects, while teachers act as facilitators, guiding students through the learning process in an immersive and supportive environment.</p>
+					<p style="font-size: 20px">Our approach ensures that students develop confidence in using Slovak in everyday life, while also connecting with their cultural roots in an enjoyable and meaningful way.</p>
+			</section>
+		</div>
+	</main>
+	 
+		<!-- Footer Section -->
+	<footer style="background-color: #ee3336; border: 5px outset #b32629; border-radius: 15px; ">
+		<p>&copy; 2025 Slovenské Vzdelávacie Centrum Manchester. All rights reserved.</p> <!-- Footer copyright information -->
+	</footer>
+</body>
+</html>

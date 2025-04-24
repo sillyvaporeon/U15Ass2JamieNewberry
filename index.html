@@ -1,19 +1,166 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
+<head>
+	<meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behavior on mobile devices -->
+	<title>SVCM</title> <!-- Sets the title of the webpage -->
+	<style>
+			/* Basic styling for layout */
+			body {
+				font-family: Arial, sans-serif; /* Sets the font style for the entire page */
+				margin: 0; /* Removes default margin */
+				padding: 0; /* Removes default padding */
+				text-align: center; /* Centers text content */
+			}
+			/* Adds padding, margin, and border to key sections */
+			header, nav, main, section, footer {
+				padding: 20px; /* Adds space inside the elements */
+				border: 1px solid #ddd; /* Adds a light gray border */
+				margin: 10px; /* Adds space around the elements */
+				display: flex;
+				flex-direction: column;
+			}
+			
+			img {
+				border-radius: 50px;
+			}
+			/* Styles the logo image */
+			.logo {
+				max-width: 125px; /* Limits the maximum width of the logo */
+				margin: auto;
+				padding-bottom: 15px;
+			}
+			.flag {
+				max-width: 350px; /* Limits the maximum width of the logo */
+				margin: auto;
+				padding-bottom: 15px;
+				padding-top: 15px;
+				filter: drop-shadow(15px 15px 15px black);
+				transition-duration: 0.5s;
+			}
+			
+			.flag:hover {
+				scale: 105%
+			}
+			
+			/* Styles the sections container to align content horizontally */
+			.sections {
+				display: flex; /* Enables flexbox layout */
+				justify-content: space-around; /* Spaces the sections evenly */
+			}
+			.sections2 {
 
- <link href="css/style.css" rel="stylesheet">
-
-<script src="scripts/javascript.js"></script>
-
-   <title>My First WebPage</title>
-
-  </head>
-
-     <body>
-          <h1>Home Page</h1>
-                    <p>This is the HomePage</p>
-<button onclick="sayHi()">vappy vap vrrrrp vap vaporeon :333333</button>
-     </body>
-</html> 
+				justify-content: space-around; /* Spaces the sections evenly */
+			}
+			/* Styles individual sections */
+			.section {
+				width: 45%; /* Sets the width of each section to take almost half the space */
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #ccccb9;
+			}
+			.titlebar {
+				border: 5px groove #ccccb9;
+				justify-content: space-around;
+				background-color: #fffcf9;
+				width: fit-content;
+				margin: auto;
+				padding: 3px;
+			}
+			.fit {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.headpush {
+				margin-top: 45px;
+			}
+			.button {
+				font-size: 24px;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			}	
+			.button1{
+				width: 20%;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #999999;
+			}
+			.button2{
+				background-color:#0b4ea2;
+				width: 20%;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #083A77;
+			}
+			.button3 {
+				background-color:#ee1c25;
+				width: 20%;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #A60C14;
+			}
+				
+			.button1:hover {
+				background-color: #999999;
+				color: white;
+				scale: 105%;
+			}
+			.button2:hover {
+				background-color: #083A77;
+				color: white;
+				scale: 105%;
+			}
+			.button3:hover {
+				background-color: #A60C14;
+				color: white;
+				scale: 105%;
+			}
+			.image {
+				border: 3px outset #c0c0c0;
+				border-radius: 15px;
+				transition-duration: 0.5s;
+			}
+			
+			.image:hover {
+				scale: 105%
+			}
+	</style>
+</head>
+<body style="background-image: linear-gradient(to bottom, white, #0b4ea2, #ee1c25); background-attachment: fixed" class="fit">
+	<!-- Header Section with Logo -->
+	<header style="background-image: linear-gradient(to bottom, peachpuff, papayawhip); border: 7px outset LightSteelBlue; border-radius: 15px; " class="headpush">
+		<img src="logo.png" alt="Logo" class="logo"> <!-- Displays a logo image -->
+		<h1 class="titlebar">Slovenské Vzdelávacie Centrum Manchester</h1> <!-- Main title of the website -->
+	</header>
+	
+    <!-- Main Content Area with Two Sections -->
+	<main style="background-color: #0e62cc; border: 5px outset #0a4a99; border-radius: 15px;">
+		<h1 style="color:white; text-shadow: 2px 2px 3px darkslategrey;">Welcome to the SVCM Website!</h1> <!-- Main heading for content section -->
+		
+		<div class="sections2"> <!-- Container to hold two sections side by side -->
+			<button onclick="document.location='index.html'" class="button button1">Home Page (You are here)</button>
+			<button onclick="document.location='about.html'" class="button button1">About Us</button>
+		</div>
+		<div class="sections2"> <!-- Container to hold two sections side by side -->
+			<button onclick="document.location='dates_fees.html'" class="button button2">Dates & Fees</button>
+			<button onclick="document.location='registration.html'" class="button button2">Register with us!</button>
+		</div>
+		<div class="sections2"> <!-- Container to hold two sections side by side -->
+			<button onclick="document.location='school.html'" class="button button3">Slovak School</button>
+			<button onclick="document.location='events.html'" class="button button3">Events & Projects</button>
+		</div>
+		
+	<img src="flag.png" alt="Flag of Slovakia" class="flag">
+		
+	</main>
+	 
+		<!-- Footer Section -->
+	<footer style="background-color: #ee3336; border: 5px outset #b32629; border-radius: 15px; ">
+		<p>&copy; 2025 Slovenské Vzdelávacie Centrum Manchester. All rights reserved.</p> <!-- Footer copyright information -->
+	</footer>
+</body>
+</html>

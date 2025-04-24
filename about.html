@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behavior on mobile devices -->
+	<title>SVCM</title> <!-- Sets the title of the webpage -->
+	<style>
+			/* Basic styling for layout */
+			body {
+				font-family: Arial, sans-serif; /* Sets the font style for the entire page */
+				margin: 0; /* Removes default margin */
+				padding: 0; /* Removes default padding */
+				text-align: center; /* Centers text content */
+			}
+			/* Adds padding, margin, and border to key sections */
+			header, nav, main, section, footer {
+				padding: 20px; /* Adds space inside the elements */
+				border: 1px solid #ddd; /* Adds a light gray border */
+				margin: 10px; /* Adds space around the elements */
+				display: flex;
+				flex-direction: column;
+			}
+			/* Styles the logo image */
+			.logo {
+				max-width: 125px; /* Limits the maximum width of the logo */
+				margin: auto;
+				padding-bottom: 15px;
+			}
+			/* Styles the sections container to align content horizontally */
+			.sections {
+				display: flex;
+				justify-content: space-around;
+			}
+			
+				
+			/* Styles individual sections */
+			.section {
+				width: 45%; /* Sets the width of each section to take almost half the space */
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #ccccb9;
+				transition-duration: 0.5s;
+			}
+			.section:hover {
+				scale:102%;
+			}
+			.sectsmall {
+			  width: 40%;
+			  padding-top: 25px;
+			  padding-bottom: 25px;
+			  border: 3px groove #ccccb9;
+			  transition-duration: 0.5s;
+			}
+			.sectsmall:hover {
+				scale:103%;
+			}
+			.button {
+			  width: 20%;
+			  padding-top: 10px;
+			  padding-bottom: 10px;
+			  border: 3px groove #ccccb9;
+			  border-radius: 10px;
+			  transition-duration: 0.5s;
+			}
+			.button:hover {
+				scale:103%;
+			}
+			.navb {
+			  width: 15%;
+			  padding-top: 8px;
+			  padding-bottom: 8px;
+			  border: 4px groove #ccccb9;
+			  border-radius: 20px;
+			  transition-duration: 0.5s;
+			}
+			.navb:hover {
+				scale:103%;
+				background-color: #bfaa95;
+				color: white;
+			}
+			.titlebar {
+				border: 5px groove #ccccb9;
+				justify-content: space-around;
+				background-color: #fffcf9;
+				width: fit-content;
+				margin: auto;
+				padding: 3px;
+			}
+			.fit {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.headpush {
+				margin-top: 45px;
+			}
+			.image {
+				border: 3px outset #c0c0c0;
+				border-radius: 15px;
+				transition-duration: 0.5s;
+			}
+			
+			.image:hover {
+				scale: 105%
+			}
+			.icard {
+				border-radius: 15px;
+				transition-duration: 0.5s;
+			}
+			
+			.image:hover {
+				scale: 105%
+			}
+			div.card {
+				background-color: hsla(0, 0%, 0%, 0.5);
+				border: 3px outset #c0c0c0;
+				border-radius: 15px;
+				transition-duration: 0.5s;
+				width: 30%;
+			}
+			div.contain {
+				padding: 12px;
+			}
+			.card:hover {
+				scale: 105%
+			}
+			
+			.button2{
+			  width: 65%;
+			  padding-top: 12px;
+			  padding-bottom: 12px;
+			  border: 3px groove #ccccb9;
+			  border-radius: 10px;
+			  transition-duration: 0.5s;
+			}
+			.button2:hover {
+				scale:103%;
+			}
+
+	</style>
+</head>
+<body style="background-image: linear-gradient(to bottom, white, #0b4ea2, #ee1c25); background-attachment: fixed" class="fit">
+	<!-- Header Section with Logo -->
+	<header style="background-image: linear-gradient(to bottom, peachpuff, papayawhip); border: 7px outset LightSteelBlue; border-radius: 15px; " class="headpush">
+		<img src="logo.png" alt="Logo" class="logo"> <!-- Displays a logo image -->
+		<h1 class="titlebar">Slovenské Vzdelávacie Centrum Manchester</h1> <!-- Main title of the website -->
+	</header>
+ 
+		<!-- Navigation Bar -->
+	<nav style="background-color: papayawhip; border: 7px outset LightSteelBlue; border-radius: 15px; font-size: 20px;">
+		<div class="sections">
+			<a class="navb" href="index.html"><h2>Home Page</h2></a>
+			<a class="navb" href="about.html"><h2>About Us</h2></a>
+			<a class="navb" href="dates_fees.html"><h2>Dates & Fees</h2></a>
+			<a class="navb" href="registration.html"><h2>Register With Us!</h2></a>
+			<a class="navb" href="school.html"><h2>Slovak School</h2></a>
+			<a class="navb" href="events.html"><h2>Events & Projects</h2></a>
+		</div>
+	</nav>
+ 
+    <!-- Main Content Area with Two Sections -->
+	<main style="background-color: #0e62cc; border: 5px outset #0a4a99; border-radius: 15px;">
+		<div class="sections">
+			<div class="card">
+				<img class="icard" alt="A photo of a class" src="homepage image1.png" style="width: 100%">
+				<div class="contain">
+					<h2 style="color:white; text-shadow: 2px 2px 3px darkslategrey;">About Us</h2>
+					<h3 style="color: white; text-shadow: 2px 2px 3px darkslategrey; ">Who are we, and how do we aim to help people?</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="sections">
+			<!-- Container to hold two sections side by side -->
+			<section class="section" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">Who We Are</h3> <!-- Heading for the first section -->
+				<p style="font-size: 24px;">
+					Slovenské Vzdelávacie Centrum – South Manchester is a registered charity dedicated to preserving and promoting Slovak language and culture. We provide Slovak language education and organize cultural and community activities to help Slovak-speaking families maintain their heritage while living abroad.
+				</p>
+				<p style="font-size: 24px;">
+					While our primary focus is on supporting Slovak-speaking children and families, we warmly welcome anyone interested in learning the Slovak language and engaging with our traditions. Beyond our Saturday school, we offer various workshops, events, and social activities where individuals of all ages can connect, learn, and take part in our cultural community.
+				</p>
+			</section>
+			<section class="section" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">Our Mission</h3> <!-- Heading for the second section -->
+				<p style="font-size: 24px;">
+					At Slovenské Vzdelávacie Centrum – South Manchester, our mission goes beyond just teaching the Slovak language. We are here to keep our heritage alive, to ensure that children growing up abroad don’t lose their connection to their roots, and to create a place where Slovak culture thrives—even far from home.
+				</p>
+				<p style="font-size: 24px;">
+					We believe that language is more than just words; it carries identity, history, and a sense of belonging. Through our work, we bring Slovak-speaking families together, helping them build friendships, strengthen their cultural ties, and feel at home even while living in the UK.
+				</p>
+				<p style="font-size: 24px;">
+					Education is at the heart of what we do, but our purpose extends even further. We are here to bridge the gap between the UK and Slovak education systems, ensuring that children who may one day return to Slovakia can transition smoothly. We are here to support families, guide them, and make sure no one feels lost when navigating life between two countries.
+				</p>
+				<p style="font-size: 24px;">
+					Above all, we are here to create a community — one that welcomes, supports, and celebrates Slovak language, traditions, and the people who cherish them.
+				</p>
+			</section>
+			<section class="section" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">Our Journey</h3> <!-- Heading for the second section -->
+				<p style="font-size: 24px;">
+					Slovenské Vzdelávacie Centrum – South Manchester was founded by a group of dedicated teachers who shared a common vision—to establish a Slovak educational and cultural centre that truly makes a difference.
+				</p>
+				<p style="font-size: 24px;">
+					With a passion for teaching, culture, and community-building, we worked tirelessly to create a space where Slovak families could access quality education and cultural activities.
+				</p>
+				<p style="font-size: 24px;">
+					After months of hard work, we were proud to become a registered charity on 9th September 2024, marking a significant step in our journey. Our official launch on 15th September was a proud moment, celebrated in collaboration with the Faculty of Education from Univerzita Mateja Bela and the Association of Slovak Schools and Community Centres in the UK.
+				</p>
+				<p style="font-size: 24px;">
+					Since then, we have continued to grow, supporting Slovak-speaking families, students, and individuals who wish to learn, connect, and celebrate Slovak culture together.
+				</p>
+			</section>
+		</div>
+
+		<!-- What we offer sections -->
+		<h2 style="color:white; text-shadow: 2px 2px 3px darkslategrey;">What we offer and how we help</h2>
+		<div class="sections">
+			<h3 style="color: white; text-shadow: 2px 2px 3px darkslategrey; ">At Slovenské Vzdelávacie Centrum – South Manchester, we provide Slovak language education, organise cultural events, and support Slovak-speaking families in navigating life between the UK and Slovakia. Whether you're here to learn, stay connected to your roots, or find support, we are here for you.</h3>
+		</div>
+
+		<div class="sections">
+			<section class="section" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">What We Offer</h3>
+				<p style="font-size: 24px;">
+					We run Saturday Slovak language lessons for children and adults, as well as cultural and community activities:
+				</p>
+				<p style="font-size: 20px;">
+					•	Morning Classes: 10:00 – 12:00 at The Firs Primary School
+				</p>
+				<p style="font-size: 20px;">
+					•	Afternoon Classes: 14:00 – 16:00 at Sale High School
+				</p>
+				<p style="font-size: 24px;">
+					Our programs include:
+				</p>
+				<p style="font-size: 20px;">
+					•	Slovak Language Lessons – Engaging and structured classes for children and adults.
+				</p>
+				<p style="font-size: 20px;">
+					•	Adapted Teaching Methods – Incorporating UK educational practices for a smooth learning experience.
+				</p>
+				<p style="font-size: 20px;">
+					•	Cultural Events & Workshops – Celebrating Slovak traditions through interactive activities.
+				</p>
+				<p style="font-size: 20px;">
+					•	Community & Social Gatherings – Opportunities to meet, connect, and build lasting friendships.
+				</p>
+				<p style="font-size: 20px;">
+					•	Opportunities for Adults – Not just for kids! Adults can join workshops and networking events.
+				</p>
+			</section>
+			
+			<section class="section" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">How We Help</h3>
+				<p style="font-size: 24px;">
+					Beyond education and cultural events, we offer practical support for Slovak-speaking families navigating life in the UK or transitioning back to Slovakia:
+				</p>
+				<p style="font-size: 20px;">
+					•	Support for ‘Komisionálne Skúšky’ – Helping children maintain their Slovak academic level
+				</p>
+				<p style="font-size: 20px;">
+					•	Guidance for Families Returning to Slovakia – Assisting with smooth school transitions and legal advice
+				</p>
+				<p style="font-size: 20px;">
+					•	Bridging the UK & Slovak Education Systems – Providing resources to fill the gaps between the two.
+				</p>
+				<p style="font-size: 20px;">
+					•	Legal & Administrative Advice – Helping families understand UK legal processes and requirements.
+				</p>
+				<p style="font-size: 20px;">
+					•	English Language Support – Assisting Slovak families who need help with English language and Translation/Interpreting services
+				</p>
+				<p style="font-size: 24px;">
+					Whether you're looking for education, community, or guidance, we are here to help you stay connected to your Slovak roots while providing the support you need.
+				</p>
+			</section>
+		</div>
+
+		<!-- Our team -->
+		<h2 style="color:white; text-shadow: 2px 2px 3px darkslategrey;">Our Team</h2>
+		<div class="sections">
+			<h3 style="color: white; text-shadow: 2px 2px 3px darkslategrey; ">At Slovenské Vzdelávacie Centrum – South Manchester, we are proud to be led by a team of experienced educators and charity trustees who are passionate about Slovak language, culture, and education. With backgrounds in both the Slovak and UK education systems, we are dedicated to providing high-quality learning experiences and fostering a strong Slovak community abroad.</h3>
+		</div>
+		<div class="sections">
+			<h3 style="color: white; text-shadow: 2px 2px 3px darkslategrey; ">Each of us shares the same vision—to create a space where Slovak heritage is preserved, language is celebrated, and families feel supported in their bilingual journey.</h3>
+		</div>
+
+		<div class="sections">
+			<section class="sectsmall" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">Mgr. Mária Mušutová</h3>
+				<h3 style="font-size: 26px;">Co-Founder | Chair of the Charity | Trustee | Curriculum & Slovak Language Teaching Developer for All Ages | Lead Teacher for AM Sessions</h3>
+				
+				<p style="font-size: 24px;">
+					Originally from Orava region in Slovakia, Mária has lived in Manchester for 17 years and holds a PGCE degree in Modern Foreign Languages from Manchester Metropolitan University. She currently works as a Spanish and French teacher at a secondary school while also offering private Slovak lessons and translation services.
+				</p>
+				<p style="font-size: 24px;">
+					As a Slovak mother abroad, Mária is deeply committed to ensuring her daughter grows up speaking Slovak and understanding her cultural heritage. This passion led her to co-found the centre and establish it as a registered charity, bringing together families who share the same goal.
+				</p>
+				<p style="font-size: 24px;">
+					Mária is responsible for developing the Slovak language curriculum for all ages, ensuring that students of various backgrounds and abilities receive structured and engaging lessons. She also leads and teaches the morning (AM) session, where she works with a diverse group of learners, ranging from young children (4 years old) to English-speaking adults learning Slovak as a second language.
+				</p>
+				<p style="font-size: 24px;">
+					At SVC-SM, Mária focuses on:
+				</p>
+				<p style="font-size: 20px;">
+					•	Chairing the charity and overseeing its development
+				</p>
+				<p style="font-size: 20px;">
+					•	Developing the curriculum for Slovak as a second language across all age groups
+				</p>
+				<p style="font-size: 20px;">
+					•	Leading and teaching the AM session for mixed-ability students (ages 4+ to adults)
+				</p>
+				<p style="font-size: 20px;">
+					•	Managing administrative tasks and charity operations
+				</p>
+				<p style="font-size: 20px;">
+					•	Organising cultural events, trips, and workshops
+				</p>
+				<q style="font-size: 18px; color: darkgrey;">
+					<i>Slovenské Vzdelávacie Centrum - South Manchester allows us to unite the Slovak community, share educational and cultural opportunities, and build lifelong friendships with those who cherish our traditions.</i>
+				</q>
+			</section>
+		
+			<section class="sectsmall" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">Mgr. Denisa Amini</h3>
+				<h3 style="font-size: 26px;">Co-Founder | Trustee | Advisor for Families Moving to Slovakia | International School Educator & Project Coordinator</h3>
+			
+				<p style="font-size: 24px;">
+					Originally from Prešov, Denisa spent nearly 20 years living in Manchester before moving back to Slovakia, where she now works at an International School in Košice.
+				</p>
+				<p style="font-size: 24px;">
+					With a degree in History and Civics Education, Denisa has always been passionate about bridging the Slovak and UK education systems. From her position in Košice, she actively supports SVC-SM by developing partnerships with Slovak schools and projects, helping families prepare for a smooth transition back to Slovakia.
+				</p>
+				<p style="font-size: 24px;">
+					At SVC-SM, Denisa is dedicated to:
+				</p>
+				<p style="font-size: 20px;">
+					•	Providing first-hand advice for families returning to Slovakia
+				</p>
+				<p style="font-size: 20px;">
+					•	Supporting students transitioning between Slovak and UK education systems
+				</p>
+				<p style="font-size: 20px;">
+					•	Developing partnerships with Slovak schools and educational institutions
+				</p>
+				<p style="font-size: 20px;">
+					•	Creating projects that connect Slovak students abroad with schools in Slovakia
+				</p>
+				<p style="font-size: 20px;">
+					•	Introducing Slovak history in an engaging way through our programs
+				</p>
+				<q style="font-size: 18px; color: darkgrey;">
+					<i>I believe that Slovenské Vzdelávacie Centrum - South Manchester is more than just a school—it's a place where we can connect, support one another, and celebrate the traditions that are important for us and our children.</i>
+				</q>
+			</section>
+		</div>
+		
+		<div class="sections">
+			<section class="sectsmall" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">Ingrid Harandza</h3>
+				<h3 style="font-size: 26px;">Co-Founder | Trustee | Early Years Educator | SEN Specialist | Creative & Cultural Programs</h3>
+				
+				<p style="font-size: 24px;">
+					Born in Rimavská Sobota, Ingrid has lived in Manchester for over 20 years. With a background in early years education, she is a qualified Early Years Educator and works as a teaching assistant in a UK primary school, focusing on young learners.
+				</p>
+				<p style="font-size: 24px;">
+					Ingrid is also a Special Educational Needs (SEN) specialist, ensuring that children with different learning needs receive the support and inclusive education they deserve.
+				</p>
+				<p style="font-size: 24px;">
+					Her love for Slovak language, literature, and storytelling has been with her since childhood when she participated in poetry and prose competitions like Hviezdoslavov Kubín.
+				</p>
+				<p style="font-size: 24px;">
+					At SVC-SM, Ingrid is responsible for:
+				</p>
+				<p style="font-size: 20px;">
+					•	Providing specialized support for SEN students
+				</p>
+				<p style="font-size: 20px;">
+					•	Teaching Slovak to young children through play, music, and movement
+				</p>
+				<p style="font-size: 20px;">
+					•	Leading creative, literary, and sports activities
+				</p>
+				<p style="font-size: 20px;">
+					•	Organizing cultural events that bring Slovak traditions to life
+				</p>
+				<q style="font-size: 18px; color: darkgrey;">
+					<i>I am excited that Slovenské Vzdelávacie Centrum - South Manchester allows me to combine my two passions—working with children and preserving our Slovak heritage—into a meaningful and supportive space for our community.</i>
+				</q>
+			</section>
+
+			<section class="sectsmall" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">Zuzana Hanuliaková</h3>
+				<h3 style="font-size: 26px;">Volunteer | Teaching Assistant | Social Media Coordinator</h3>
+				<p style="font-size: 24px;">
+					Zuzana is a dedicated volunteer and mother of three, whose passion for Slovak culture and education shines through her work at SVC-SM. She plays a vital role in supporting both teachers and students as a teaching assistant, ensuring that classes run smoothly and that each child gets the guidance they need.
+				</p>
+				<p style="font-size: 24px;">
+					Beyond the classroom, Zuzana is also responsible for managing SVC-SM’s social media presence, helping to share the center’s activities, events, and achievements with the community.
+				</p>
+				<p style="font-size: 24px;">
+					At SVC-SM, Zuzana:
+				</p>
+				<p style="font-size: 20px;">
+					•	Supports teachers and students in lessons as a teaching assistant
+				</p>
+				<p style="font-size: 20px;">
+					•	Manages social media content to keep families informed and engaged
+				</p>
+				<p style="font-size: 20px;">
+					•	Helps coordinate events and activities
+				</p>
+				<p style="font-size: 24px;">
+					Her enthusiasm, kindness, and dedication make her an invaluable part of our team!
+				</p>
+			</section>
+		</div>
+		
+		<!-- Meet us in person! -->
+		<h2 style="color:white; text-shadow: 2px 2px 3px darkslategrey;">Meet Us in Person!</h2>
+		<div class="sections">
+			<h3 style="color: white; text-shadow: 2px 2px 3px darkslategrey; ">We look forward to welcoming you to Slovenské Vzdelávacie Centrum – South Manchester! Our team is here to support you and your children on your bilingual journey, helping you stay connected to Slovak language, education, and traditions and more.</h3>
+		</div>
+
+		<!-- Our partners -->
+		<div class="sections">
+			<section class="section" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">Our Partners</h3>
+				<p style="font-size: 24px;">
+					At Slovenské Vzdelávacie Centrum – South Manchester, we believe in the power of collaboration. Thanks to the support of our partners, we can continue to provide high-quality Slovak language education, cultural events, and community programs for Slovak-speaking families in the UK.
+				</p>
+				<p style="font-size: 24px;">
+					We are proud to be supported by:
+				</p>
+				<p style="font-size:20px;">
+					<b> Úrad pre Slovákov žijúcich v zahraničí </b>
+				</p>
+				<p style="font-size: 20px;">
+					Supporting Slovak communities abroad in preserving language, culture, and national identity.
+				</p>
+				<p style="font-size:20px;">
+					<b> ISEIA (International Slovak Educational Institutions & Associations) </b> 
+				</p>
+				<p style="font-size: 20px;">
+					Strengthening global Slovak education through collaboration and networking.
+				</p>
+				<p style="font-size:20px;">
+					<b> Association of Slovak Schools and Community Centers in the UK </b> 
+				</p>
+				<p style="font-size: 20px;">
+					Bringing together Slovak educational initiatives across the UK to enhance learning opportunities.
+				</p>
+				<p style="font-size:20px;">
+					<b> Univerzita Mateja Bela </b> 
+				</p>
+				<p style="font-size: 20px;">
+					A key academic partner supporting our educational programs.
+				</p>
+				<p style="font-size:20px;">
+					<b> Morrisons </b>
+				</p>
+				<p style="font-size: 20px;">
+					Providing local support and community refreshments sponsorship 
+				</p>
+				<p style="font-size:20px;">
+					<b> Manchester College </b>
+				</p>
+				<p style="font-size: 20px;">
+					Partnering with us on educational projects, including website development and student engagement.
+				</p>
+				<p style="font-size:20px;">
+					<b> Porta134 Café </b> 
+				</p>
+				<p style="font-size: 20px;">
+					A valued community partner that provides a welcoming space for our trustee meetings, supports us with tea and coffee at our events, and allows us to display children's artwork. 
+				</p>
+				<p style="font-size: 24px;">
+					We are always looking to expand our network and build new partnerships that align with our mission. If you or your organization are interested in supporting our work, please get in touch.
+				</p>
+				<p style="font-size: 26px;">
+					<b> Contact us to explore partnership opportunities. </b>
+				</p>
+			</section>
+			
+			<section class="section" style="background-color:papayawhip;">
+				<h3 style="font-size: 28px;">Support Us</h3>
+				<p style="font-size: 24px;">
+					At Slovenské Vzdelávacie Centrum – South Manchester, we are passionate about preserving the Slovak language and culture for future generations. As a registered charity, we rely on the generosity of our community to continue providing high-quality education, cultural programs, and support services.
+				</p>
+				<p style="font-size: 24px;">
+					There are <b>two key ways</b> you can help:
+				</p>
+				<div class="sections">
+					<section class="section" style="background-color:papayawhip;">
+					<h3 style="font-size: 26px;"><b>Make a donation</b></h3>
+						<p style="font-size: 24px;">
+							Your contribution helps us:
+						</p>
+						<p style="font-size:20px;">
+							•	Provide affordable Slovak language classes for children and adults.
+						</p>
+						<p style="font-size:20px;">
+							•	Organise cultural events, workshops, and community activities.
+						</p>
+						<p style="font-size:20px;">
+							•	Develop educational resources for our students.
+						</p>
+						<p style="font-size:20px;">
+							•	Offer support and guidance for Slovak families in the UK.
+						</p>
+						<p style="font-size: 24px;">
+							Every donation, no matter the amount, makes a <b>real difference</b> in ensuring that Slovak heritage thrives abroad.
+						</p>
+						<p style="font-size: 26px;">
+							<b>How to Donate</b>
+						</p>
+						<p style="font-size: 24px;">
+							You can support us directly via bank transfer:
+						</p>
+						<p style="font-size: 20px;">
+							<b>Account Number:</b> 19215268
+						</p>
+						<p style="font-size: 20px;">
+							<b>Sort Code:</b> 30-54-66
+						</p>
+						<p style="font-size: 24px;">
+							If you would like to discuss other ways to donate or contribute, please contact us.
+						</p>
+					</section>
+					<section class="section" style="background-color:papayawhip;">
+					<h3 style="font-size: 26px;"><b>Become a volunteer</b></h3>
+					<p style="font-size: 24px;">
+						Would you like to get involved and <b>make a direct impact</b> in our community? We are always looking for <b>enthusiastic volunteers</b> to help with:
+					</p>
+					<p style="font-size:20px;">
+						<b> •	Teaching Assistance  </b>
+					</p>
+					<p style="font-size: 20px;">
+						Supporting our educators in Slovak language lessons.
+					</p>
+					<p style="font-size:20px;">
+						<b> •	Event Coordination  </b> 
+					</p>
+					<p style="font-size: 20px;">
+						Helping organize cultural celebrations and community gatherings.
+					</p>
+					<p style="font-size:20px;">
+						<b> •	Fundraising & Sponsorship  </b> 
+					</p>
+					<p style="font-size: 20px;">
+						Assisting with grant applications and community fundraising efforts.
+					</p>
+					<p style="font-size:20px;">
+						<b> •	Administrative Support  </b> 
+					</p>
+					<p style="font-size: 20px;">
+						Assisting with the day-to-day operations of the charity.
+					</p>
+					<p style="font-size:20px;">
+						<b> •	Social Media & Marketing  </b>
+					</p>
+					<p style="font-size: 20px;">
+						Helping us spread the word about our work.
+					</p>
+					<p style="font-size: 24px;">
+						Volunteering with us is a rewarding experience, where you can meet new people, contribute to the Slovak community, and be part of a meaningful mission.
+					</p>
+					</section>
+				</div>
+			</section>
+		</div>
+		
+		<div class="sections">
+			<section class="sectsmall" style="background-color:papayawhip;">
+				<p style="font-size: 26px;">
+					<b>Interested in Volunteering?</b>
+				</p>
+				<p style="font-size: 24px;">We’d love to hear from you! <b>Get in touch</b> to find out how you can help.</p>
+				<a href="https://www.facebook.com/p/Slovenské-Vzdelávacie-Centrum-South-Manchester-61557468560704/">
+					<button class="button2"><img src="fbicon.png" style="max-width:75px"></button>
+				</a>
+				<a href="https://www.instagram.com/slovakschoolmanchester.charity/">
+					<button class="button2"><img src="igicon.png" style="max-width:75px"></button>
+				</a>
+			</section>
+		</div>
+
+
+
+
+
+
+	</main>
+
+	 
+		<!-- Footer Section -->
+	<footer style="background-color: #ee3336; border: 5px outset #b32629; border-radius: 15px; ">
+		<p>&copy; 2025 Slovenské Vzdelávacie Centrum Manchester. All rights reserved.</p> <!-- Footer copyright information -->
+	</footer>
+</body>
+</html>

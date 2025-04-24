@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper responsive behavior on mobile devices -->
+	<title>SVCM</title> <!-- Sets the title of the webpage -->
+	<style>
+			/* Basic styling for layout */
+			body {
+				font-family: Arial, sans-serif; /* Sets the font style for the entire page */
+				margin: 0; /* Removes default margin */
+				padding: 0; /* Removes default padding */
+				text-align: center; /* Centers text content */
+			}
+			/* Adds padding, margin, and border to key sections */
+			header, nav, main, section, footer {
+				padding: 20px; /* Adds space inside the elements */
+				border: 1px solid #ddd; /* Adds a light gray border */
+				margin: 10px; /* Adds space around the elements */
+				display: flex;
+				flex-direction: column;
+			}
+			/* Styles the logo image */
+			.logo {
+				max-width: 125px; /* Limits the maximum width of the logo */
+				margin: auto;
+				padding-bottom: 15px;
+			}
+			/* Styles the sections container to align content horizontally */
+			.sections {
+				display: flex; /* Enables flexbox layout */
+				justify-content: space-around; /* Spaces the sections evenly */
+			}
+			/* Styles individual sections */
+			.section {
+				width: 45%; /* Sets the width of each section to take almost half the space */
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #ccccb9;
+				transition-duration: 0.5s;
+			}
+			.section:hover {
+				scale:102%;
+			}
+			.section2 {
+				width: 30%;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #ccccb9;
+				border-radius: 20px;
+				transition-duration: 0.5s;
+			}
+			.section2:hover {
+				scale:105%;
+			}
+			.section3 {
+				width: 25%;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				border: 3px groove #ccccb9;
+				border-radius: 10px;
+				transition-duration: 0.5s;
+			}
+			.section3:hover {
+				scale:102%;
+			}
+			.sectionbig {
+				width: 60%;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				border: 3px groove #ccccb9;
+				transition-duration: 0.5s;
+			}
+			.sectionbig:hover {
+				scale:101%;
+			}
+			.sectsmall {
+			  width: 40%;
+			  padding-top: 25px;
+			  padding-bottom: 25px;
+			  border: 3px groove #ccccb9;
+			  transition-duration: 0.5s;
+			}
+			.sectsmall:hover {
+				scale:103%;
+			}
+			.button {
+			  width: 20%;
+			  padding-top: 10px;
+			  padding-bottom: 10px;
+			  border: 3px groove #ccccb9;
+			  border-radius: 10px;
+			  transition-duration: 0.5s;
+			}
+			.button:hover {
+				scale:103%;
+			}
+			.titlebar {
+				border: 5px groove #ccccb9;
+				justify-content: space-around;
+				background-color: #fffcf9;
+				width: fit-content;
+				margin: auto;
+				padding: 3px;
+			}
+			.fit {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.headpush {
+				margin-top: 45px;
+			}
+			.image {
+				border: 3px outset #c0c0c0;
+				border-radius: 15px;
+				transition-duration: 0.5s;
+			}
+			
+			.image:hover {
+				scale: 105%
+			}
+			.navb {
+			  width: 15%;
+			  padding-top: 8px;
+			  padding-bottom: 8px;
+			  border: 4px groove #ccccb9;
+			  border-radius: 20px;
+			  transition-duration: 0.5s;
+			}
+			.navb:hover {
+				scale:103%;
+				background-color: #bfaa95;
+				color: white;
+			}
+	</style>
+</head>
+<body style="background-image: linear-gradient(to bottom, white, #0b4ea2, #ee1c25); background-attachment: fixed" class="fit">
+
+		<!-- Header Section with Logo -->
+		<header style="background-image: linear-gradient(to bottom, peachpuff, papayawhip); border: 7px outset LightSteelBlue; border-radius: 15px; " class="headpush">
+			<img src="logo.png" alt="Logo" class="logo"> <!-- Displays a logo image -->
+			<h1 class="titlebar">Slovenské Vzdelávacie Centrum Manchester</h1> <!-- Main title of the website -->
+		</header>
+	 
+			<!-- Navigation Bar -->
+		<nav style="background-color: papayawhip; border: 7px outset LightSteelBlue; border-radius: 15px; font-size: 20px;">
+			<div class="sections">
+				<a class="navb" href="index.html"><h2>Home Page</h2></a>
+				<a class="navb" href="about.html"><h2>About Us</h2></a>
+				<a class="navb" href="dates_fees.html"><h2>Dates & Fees</h2></a>
+				<a class="navb" href="registration.html"><h2>Register With Us!</h2></a>
+				<a class="navb" href="school.html"><h2>Slovak School</h2></a>
+				<a class="navb" href="events.html"><h2>Events & Projects</h2></a>
+			</div>
+		</nav>
+	 
+		<!-- Main Content Area with Two Sections -->
+		<main style="background-color: #0e62cc; border: 5px outset #0a4a99; border-radius: 15px;">
+			
+			<div class="sections">
+				<section class="section3" style="background-color: #fff2dd;">
+					<h3>Monthly Membership (Coming Soon!)</h3>
+					<p style="font-size: 12px">We are currently developing a monthly membership plan to provide additional flexibility and benefits. More details will be available soon.</p>
+					<p style="font-size: 12px">For payment details, sibling discounts, or any queries, please contact us.</p>
+				</section>
+			</div>
+			
+			<h2 style="color:white; text-shadow: 2px 2px 3px darkslategrey;">Registration Forms</h2>
+			<p style="color: white; text-shadow: 2px 2px 3px darkslategrey; ">To participate in Slovenské Vzdelávacie Centrum – South Manchester, you may need to complete one of the following registration forms, depending on your involvement.</p>
+			
+			<div class="sections">
+				<section class="section" style="background-color:papayawhip; border-radius:15px;">
+					<h2>Slovak School Registration</h2>
+					<p>All students enrolling in our Slovak School must complete a registration form to ensure we provide the best possible learning experience tailored to their needs.</p>
+					<p><b>How to Register</b></p>
+					<div class="sections">
+						<section class="section2" style="background-color:papayawhip; border-radius:10px;">
+							<h3>1.	Complete the School Registration Form</h3>
+							<p>o	Access the form [here] (Insert hyperlink to online form if available)</p>
+							<p>o	Paper copies are available upon request via email or at our sessions.</p>
+						</section>
+						<section class="section2" style="background-color:papayawhip; border-radius:10px;">
+							<h3>2.	Submit Your Form</h3>
+							<p>o	<b>Online</b>: Fill out and submit electronically.</p>
+							<p>o	<b>In-person</b>: Bring the completed form to your first session.</p>
+							<p>o	<b>By email</b>: Scan and send your completed form to [your email address].</p>
+						</section>
+						<section class="section2" style="background-color:papayawhip; border-radius:10px;">
+							<h3>3. Receive Confirmation</h3>
+							<p>o	Access the form [here] (Insert hyperlink to online form if available)</p>
+							<p>o	Paper copies are available upon request via email or at our sessions.</p>
+						</section>
+					</div>
+					<h3>What Information is Required?</h3>
+					<p>Student details (name, age, language background)</p>
+					<p>Parent/guardian contact information</p>
+					<p>Emergency contact details</p>
+					<p>Medical or special educational needs (SEN) information</p>
+					<p>Preferred session (AM or PM)</p>
+					<p>Consent for photos, videos, and data handling</p>
+				</section>
+				<section class="section" style="background-color:papayawhip; border-radius:15px;">
+					<h2>Volunteer Registration</h2>
+					<p>We welcome enthusiastic volunteers who want to support our school and cultural activities.</p>
+					<p><b>How to Become a Volunteer</b></p>
+					
+					<div class="sections">
+						<section class="sectsmall" style="background-color:papayawhip; border-radius:10px;">
+							<h3>1.	Complete the Volunteer Registration Form</h3>
+							<p>o	Access the form [here] (Insert hyperlink to online form if available)</p>
+							<p>o	Paper copies are available upon request via email or at our sessions.</p>
+						</section>
+						<section class="sectsmall" style="background-color:papayawhip; border-radius:10px;">
+							<h3>2.	Submit Your Form</h3>
+							<p>o	<b>Online</b>: Submit electronically.</p>
+							<p>o	<b>In-person</b>: Hand in during a session.</p>
+							<p>o	<b>By email</b>: Send it to svcmanchester@yahoo.com</p>
+						</section>
+					</div>
+					<div class="sections">
+						<section class="sectsmall" style="background-color:papayawhip; border-radius:10px;">
+							<h3>3.	DBS Check (if applicable)</h3>
+							<p>o	Volunteers working directly with children may require a DBS (Disclosure and Barring Service) check. If you don’t have one, we can guide you through the process.</p>
+						</section>
+						<section class="sectsmall" style="background-color:papayawhip; border-radius:10px;">
+							<h3>4.	Attend an Introductory Meeting</h3>
+							<p>o	We will arrange a short meeting to discuss your role and how you can contribute.</p>
+						</section>
+					</div>
+					<h3>Volunteer Roles Available</h3>
+					<p>Teaching Assistant – Support our educators in lessons.</p>
+					<p>Event Coordinator – Help plan and organize cultural events.</p>
+					<p>Fundraising & Sponsorship – Assist with grant applications and funding initiatives.</p>
+					<p>Social Media & Marketing – Help promote our activities and share updates.</p>
+					<p>General Support – Assist with setup, administration, and community engagement.</p>
+					
+					<h3>Interested? Fill out the form and become part of our team!</h3>
+				</section>
+			</div>
+			<div class="sections">
+				<section class="section" style="background-color:papayawhip; border-radius:15px;">
+					<h2>Monthly Membership Interest Form</h2>
+					<p>We are developing a monthly membership program for families who want extra resources, preparation for "komisionálne skúšky," and additional learning support.</p>
+					
+					<p><b>Who is this for?</b></p>
+					<p>✔ Families whose children are registered in school in Slovakia and need support preparing for exams.</p>
+					<p>✔ Students looking for extra Slovak language resources beyond weekly classes.</p>
+					<p>✔ Those interested in additional cultural and educational activities.</p>
+					
+					<h3>Express Your Interest</h3>
+					<p>If you would like to become a member, please fill out our Monthly Membership Interest Form [here] (Insert link if available). We will contact you once the program is finalised.</p>
+
+				</section>
+			</div>
+			
+			<div class="sections">
+				<section class="sectionbig" style="background-color:papayawhip; border-radius:15px;">
+					<h2><b>Consent Form</b></h2>
+					<h3>To ensure the safety, privacy, and well-being of all students and our members, we require a completed Consent Form for everyone enrolled at Slovenské Vzdelávacie Centrum – South Manchester. This form allows us to collect necessary permissions from individuals, parents or guardians regarding key aspects of our educational and community activities.</h3>
+					<div class="sections">
+						<section class="section" style="background-color:papayawhip; border-radius:15px;">
+							<h2>What the Consent Form Covers</h2>
+							<h3>Emergency Medical Treatment</h3>
+								<p>•	Permission for staff to seek medical assistance in case of an emergency.</p>
+							<h3>Photo & Video Consent <small><i>(Optional)</i></small></h3>
+								<p>•	Permission for your child to be included in photos or videos used for school projects, website, social media, or promotional materials.</p>
+							<h3>Data Protection (GDPR Compliance)</h3>
+								<p>•	Agreement on how we collect, store, and use personal data in line with UK GDPR regulations.</p>
+							<h3>Participation in Off-Site Activities & School Trips <small><i>(Optional)</i></small></h3>
+								<p>•	Permission for your child to attend local educational outings, cultural events, or workshops outside the school premises.</p>
+							<h3>Special Educational Needs (SEN) & Medical Information</h3>
+								<p>•	Space to provide details on allergies, medical conditions, or any special support requirements.</p>
+						</section>
+						<section class="section" style="background-color:papayawhip; border-radius:15px;">
+							<h2>How to Submit the Consent Form</h2>
+							<div class="sections">
+								<section class="section" style="background-color:papayawhip; border-radius:15px;">
+									<h4>1.	Complete the Form</h4>
+									<p>o	Access the form [here] (Insert hyperlink if available).</p>
+									<p>o	Paper copies are available upon request.</p>
+								</section>
+								<section class="section" style="background-color:papayawhip; border-radius:15px;">
+									<h4>2.	Submit the Form</h4>
+									<p>o	<b>Online</b>: Fill out and submit electronically.</p>
+									<p>o	<b>In-person</b>: Bring the completed form to your first session.</p>
+									<p>o	<b>By email</b>: Scan and send it to svcmanchester@yahoo.com.</p>
+								</section>
+							</div>
+							<h4>Note: A completed Consent Form is required before your child can attend classes.</h4>
+						</section>
+					</div>
+					<h3>Need More Information?</h3>
+					<h4>If you have any questions or need to update your child’s information, please contact us.</h4>
+				</section>
+			</div>
+			
+			<h2 style="color:white; text-shadow: 2px 2px 3px darkslategrey;">Online Form</h2> <!-- Main heading for content section -->
+			<p style="color: white; text-shadow: 2px 2px 3px darkslategrey; ">You can access our forms through this link: <a href="#">Click Here</a></</p> <!-- Short description of the page -->
+			<div class="sections"> <!-- Container to hold two sections side by side -->
+				<section class="section2" style="background-color:papayawhip;">
+					<h3>Paper Copy Request</h3> <!-- Heading for the first section -->
+					<p>Email us at <a href="mailto:your-email@example.com">your-email@example.com</a> to request one.</p>
+					<p>Complete your information below so we can send you one:</p><!-- Description inside first section -->
+					
+
+						<div class="sections">
+							<section class="sectsmall" style="background-color: #fff2dd; border: 7px outset LightSteelBlue; border-radius: 15px;">
+								<form id="myForm">
+									<div class="form-group">
+										<label for="myForm">Form that you want a paper copy of:</label>
+										<select id="myForm" name="formchoice" required>
+											<option value="" disabled selected>-- Select an option --</option>
+											<option value="slovak_school">Slovak School Registration</option>
+											<option value="volunteer">Volunteer Registration</option>
+											<option value="consent">Consent Form Registration</option>
+										</select>
+									</div>
+							
+									<div class="form-group" style="margin:3px 0px;">
+										<label for="name">Name:</label>
+										<input type="text" id="name" name="name" required>
+									</div>
+									<div class="form-group" style="margin:3px 0px;">
+										<label for="address">Address:</label>
+										<input type="text" id="address" name="address" required>
+									</div>
+									<div class="form-group" style="margin:3px 0px;">
+										<label for="mobile">Mobile No:</</label>
+										<input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required>
+									</div>
+									<div class="form-group" style="margin:3px 0px;">
+										<label for="email">Email:</</label>
+										<input type="email" id="email" name="email" required>
+									</div>
+									
+									<div class="sections" style="margin:3px 0px;">
+										<button type="submit" class="button">Submit</button>
+									</div>
+								</form>
+							</section>
+						</div>
+
+				</section>
+				
+			</div>
+			
+		</main>
+		
+	<!-- Link to external JavaScript file -->
+	<script src="script.js"></script>
+		
+		 
+			<!-- Footer Section -->
+		<footer style="background-color: #ee3336; border: 5px outset #b32629; border-radius: 15px; ">
+			<p>&copy; 2025 Slovenské Vzdelávacie Centrum Manchester. All rights reserved.</p> <!-- Footer copyright information -->
+		</footer>
+		
+	
+
+	
+</body>
+</html>
